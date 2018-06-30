@@ -1,0 +1,10 @@
+.ut-load-input-wrapper {
+    position: relative;
+    display: inline-block;
+    i {
+        display: block;
+        position: absolute;
+        right: 1.4ch;
+        top: calc(50% - .5em);
+    }
+}

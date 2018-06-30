@@ -1,0 +1,6 @@
+<div class="ut-load-input-wrapper">
+  <i *ngIf="_load === true" class="ut-spinner-load fa fa-spinner fa-spin"></i>
+  <i *ngIf="_state === true" class="ut-spinner-success fa fa-check"></i>
+  <i *ngIf="_state === false" class="ut-spinner-error fa fa-times"></i>
+  <ng-content></ng-content>
+</div>

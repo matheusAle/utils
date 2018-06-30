@@ -1,0 +1,17 @@
+<section>
+  <h2>Input com feedback de carregamento</h2>
+  <div>
+    <p>Input com o processamento da ação bem sucedido.</p>    
+    <ut-load-input [input]="input1" [watch]="['blur', 'enter']" [call]="someAction">
+      <input type="text" #input1>
+    </ut-load-input>
+    <p>Input com erro no processamento da ação.</p>
+    <ut-load-input [input]="input2" [watch]="['blur', 'enter']" [call]="someActionError">
+      <input type="text" #input2 style="font-size: 2em">
+    </ut-load-input>
+    <p>A função de callback não retorna um promise e sim um boolean</p>
+    <ut-load-input [input]="input3" [watch]="['input']" [call]="someActionNoPromise" [disable]="false">
+      <input type="text" #input3>
+    </ut-load-input>
+  </div>
+</section>

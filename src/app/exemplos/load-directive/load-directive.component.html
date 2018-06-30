@@ -1,0 +1,16 @@
+<section>
+  <h2>load-directive</h2>
+  <h3>Botão com feedback de processando</h3>
+  <div>
+    <button [utLoad]="someAction" >foo</button>
+    <button [utLoad]="someActionError" >foo error</button>
+  </div>
+  
+  <div>
+    <h3>Grupo de botões</h3>
+    <button #btn1 [utLoad]="someAction" [group]="[btn1, btn2]">btn foo</button>
+    <button #btn2 [utLoad]="someActionError"  [group]="[btn1, btn2]">btn foo error </button>
+  </div>
+  
+  
+</section>
